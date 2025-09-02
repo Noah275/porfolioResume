@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-family: "Montserrat", sans-serif;
+}
+
+
+header{
+    background-color:#FCDB74;
+}
+
+.genLayout{
+    max-width: 1024px;
+    margin: auto;
+    
+}
+
+.topBox{
+    height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topItems{
+    border: 1px solid;
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    padding: 1rem 2rem;
+    border-radius: 30px;
+    background-color: #24222D;
+}
+
+.topItems > h4{
+    font-size: 20px;
+    color: #FAFAFA;
+}
+
+.imgBox{
+    display: flex;
+    gap: 1rem;
+}
+
+.heroBox{
+    /* border: 2px solid; */
+    margin-top: 10rem;
+}
+
+.heroWrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.heroCon > h4{
+    text-transform: uppercase;
+    color: #584B8C;
+    font-size: 12px;
+    font-weight: 700;
+    display: flex;
+    gap: 0.3rem;
+}
+
+.heroCon > h1{
+    font-size: 30px;
+    width: 300px;
+}
+
+.heroImg{
+    border-radius: 100%;
+    height: 300px;
+    width: 350px;
+    background-color: #24222D;
+}
+
+.heroImg > img{
+    height: 100%;
+    width: 100%;
+    border-radius: 100%;
+}
+
+.heroPara{
+    width: 315px;
+}
+
+.heroPara > p{
+    font-size: 15px;
+    line-height: 1.3rem;
+}
+
+.heroPara > button{
+    margin-top: 1rem;
+    padding: 0.4rem 0.3rem;
+    background-color: #24222D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: none;
+}
+
+.heroPara > button > a{
+    color: #FAFAFA;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-size: 13px;
+    padding-right: 1rem;
+}
+
+.heroPara > button > a > i{
+    border: 1px solid white;
+    padding: 0.5rem;
+    border-radius: 100%;
+    color: #24222D;
+    background-color: #FAFAFA;
+
+}
+
+.heroName {
+   display: flex;
+   justify-content: space-between;
+}
+
+.heroName > h1{
+    text-transform: uppercase;
+    font-size: 70px;
+}
+
+
+     .blackLayout{
+        background-color: #24222D;
+     }
+     /* ABOUT SECTION */
+     .aboutBox{
+        padding: 7rem 0rem;
+     }
+
+     .aboutCon{
+        display: flex;
+        gap: 2rem;
+     }
+
+     .aboutTxt > h4{
+        color: #FAFAFA;
+        font-size: 20px;
+        margin-bottom: 3rem;
+        display: flex;
+        align-items: center;
+    }
+
+    .aboutTxt > h4 > img{
+       width: 30px;
+       padding-right: 10px;
+    }
+
+    .aboutTxt > h2{
+        color: #FAFAFA;
+        width: 400px;
+        text-transform: uppercase;
+        margin-bottom: 1rem;
+    }
+
+     .aboutTxt > h2 > span{
+        color: #FCDB74;
+     }
+
+      .aboutTxt > P{
+        color: #FAFAFA;
+        opacity: 0.5;
+        width: 400px;
+        font-size: 15px;
+      }
+
+      .ratingCon{
+         width: 100%;
+         padding-top: 6rem;
+
+      }
+
+      .aboutRating{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .aboutRating > h1{
+        color: #FAFAFA;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .aboutRating > P{
+        color: #FAFAFA;
+    }
+
+
+
+     .butRating{
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: #FAFAFA;
+     
+     }
+
+     .butRating > .butInside{
+        background-color: #FCDB74;
+        padding: 0.4rem 0rem;
+        width: 10%;
+        border-radius: 10px;
+    }
+
+    
+
+        /* Service Section */
+        .sevWap {
+            border: 2px solid;
+            padding: 4rem 0;
+
+        }
+    .sevBox{
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .sevTxt > h4{
+        display: flex;
+        align-items: center;
+        text-transform: capitalize;
+        color: #FAFAFA;
+        font-size: 20px;
+        padding-bottom: 3rem;
+        }
+        .sevTxt > h4 > img{
+            width: 30px;
+            padding-right: 10px;
+        }
+
+        .sevTxt > h2 {
+            text-transform: uppercase;
+            color: #FAFAFA;
+            width: 450px;
+            padding-bottom: 2rem;
+        }
+        .sevTxt > h2 > span{
+            color: #FCDB74;
+        }
+        .sevTxt > ol{
+            padding-left: 1rem;
+        }
+        .sevTxt > ol > li{
+            color: #FAFAFA;
+            text-transform: uppercase;
+            opacity: 0.5;
+            line-height: 2rem;
+        }
+
+        .hexItems{
+            border: 2px solid white;
+            width: clamp(50px, 25vw,140px);
+            aspect-ratio: 1;
+            background-image: url(image.html/Polygon\ 1\ \(1\).png);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            display: grid;
+            place-items: center;
+          
+        }
+
+
+        /* Educationl / experience */
+         .eduBody{
+            background-color: #FCDB74;
+         }
+
+         .eduBox{
+            padding: 4rem;
+         }
+
+         .eduTxt{
+            width: 400px;
+            margin: auto;
+            margin-bottom: 3rem;
+         }
+
+         .eduTxt > h4{
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            font-size: 20px;
+         }
+
+         .eduTxt > h4 > img{
+            padding-right: 0.5rem;
+            width: 30px;
+         }
+
+         .eduItems{
+            width: 600px;
+            margin: auto;
+            background-color: #24222D;
+            padding: 2rem;
+            margin-bottom: 2.5rem;
+            border-radius: 20px;
+         }
+
+         .eduPanel > h4{
+            text-transform: uppercase;
+            color: #FCDB74;
+            font-size: 15px;
+            padding-bottom: 3rem;
+        }
+
+         .eduPanel > h2{
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            color: #FAFAFA;
+            padding-bottom: 0.3rem;
+         }
+
+          .eduPanel > h2 > img{
+            padding-right: 1rem;
+            width: 30px;
+          }
+
+          .eduPanel > p{
+            padding-left: 2rem;
+            text-transform: capitalize;
+            color: #FAFAFA;
+            opacity: 0.5;
+            font-size: 12px;
+             padding-bottom: 0.3rem;
+
+          }
+          .eduPanel > h6{
+            padding-left: 2rem;
+            text-transform: capitalize;
+            color: #FCDB74;
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+
+         .expBox{
+             width: 600px;
+            margin: auto;
+            background-color: #24222D;
+            padding: 2rem;
+            border-radius: 20px;
+         }
+
+         .expItems{
+            margin-bottom: 2rem;
+            line-height: 1.5rem;
+         }
+        
+         .expItems > h4{
+            text-transform: uppercase;
+            color: #FCDB74;
+            font-size: 15px;
+            padding-bottom: 2rem;
+        }
+
+        .expItems > h2{
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            color: #FAFAFA; 
+         }
+
+          .expItems > h2 > img{
+            padding-right: 1rem;
+            width: 30px;
+          }
+
+          .expItems > p{
+            padding-left: 2rem;
+            text-transform: capitalize;
+            color: #FAFAFA;
+            opacity: 0.5;
+            font-size: 12px;
+        }
+          .expItems > h6{
+            padding-left: 2rem;
+            text-transform: capitalize;
+            color: #FCDB74;
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+           .expItems1{
+            margin-bottom: 2rem;
+            line-height: 1.5rem;
+         }
+         .expItems1 > h4{
+            text-transform: uppercase;
+            color: #FCDB74;
+            font-size: 15px;
+            padding-bottom: 3rem;
+        }
+
+        .expItems1 > h2{
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            font-size: 17px;
+            color: #FAFAFA;
+         }
+
+          .expItems1 > h2 > img{
+            padding-right: 1rem;
+            width: 30px;
+          }
+
+          .expItems1 > p{
+            padding-left: 2rem;
+            text-transform: capitalize;
+            color: #FAFAFA;
+            opacity: 0.5;
+            font-size: 12px;
+        }
+          .expItems1 > h6{
+            padding-left: 2rem;
+            text-transform: capitalize;
+            color: #FCDB74;
+            font-weight: 400;
+            font-size: 10px;
+        }
+
+          
+        /* Contact page */
+        .conBox{
+            padding: 4rem;
+
+        }
+
+        .conTxt{
+            width: 200px;
+            margin: auto;
+            margin-bottom: 3rem;
+        }
+
+        .conTxt > h4 {
+            text-transform: capitalize;
+            color: #FAFAFA;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .conTxt > h4 > img{
+            padding-right: 0.5rem;
+            width: 30px;
+        }
+
+        .imgKey{
+            width: 600px;
+            margin: auto;
+            margin-bottom: 1rem;
+        }
+
+        .imgKey > img{
+            width: 100%;
+        }
+
+
+        form{
+            width: 600px;
+            margin: auto;
+        }
+
+        .formWap{
+            display: flex;
+            gap: 1.5rem;
+            padding-bottom: 1rem;
+            
+
+        }
+
+        .formBox{
+            display: flex;
+            flex-direction: column;
+         
+            } 
+
+            .formBox > label{
+                text-transform: uppercase;
+                color: #FCDB74;
+                font-size: 12px;
+                font-weight: 600;
+                padding-bottom: 0.3rem;
+            }
+            .formBox > label > span{
+                color: red;
+            }
+            
+            .formBox > input{
+                padding: 0.6rem;
+                width: 284px;
+                border-radius: 5px;
+                border: none;
+                font-size: 10px;
+                
+            }
+
+            .subForm{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 1rem;
+
+            }
+
+            .subForm > label{
+                text-transform: uppercase;
+                color: #FCDB74;
+                font-size: 12px;
+                font-weight: 600;
+                padding-bottom: 0.3rem;
+            }
+
+            .subForm > input{
+                padding: 0.6rem;
+                width: 600px;
+                text-transform: capitalize;
+                border-radius: 5px;
+                border: none;
+                font-size: 10px;
+            }
+
+            .mesForm{
+                display: flex;
+                flex-direction: column;
+                padding-bottom: 1rem;
+            }
+
+            .mesForm > label{
+                text-transform: uppercase;
+                color: #FCDB74;
+                font-size: 12px;
+                font-weight:600 ;
+                padding-bottom: 0.3rem;
+             }
+
+             .mesForm > label > span{
+                color: red;
+             }
+
+             .mesForm > input{
+                text-transform: capitalize;
+                padding-bottom: 5rem;
+                padding-left: 0.6rem;
+                font-size: 10px;
+                padding-top: 0.6rem;
+             }
+
+             .conBut > button{
+                padding:0.2rem 1rem 0.2rem 0.2rem;
+                background-color: #FAFAFA;
+                text-transform: capitalize;
+                border-radius: 20px;
+                border: none;
+                font-size: 10px;
+           }
+
+
+
+          .conBut > button > i{
+           padding: 0.5rem;
+           border-radius: 100%;
+           color: #FAFAFA;
+           background-color: #24222D;
+           margin-right: 0.3rem;
+           
+        }
+
