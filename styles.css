@@ -9,7 +9,7 @@
 
 
 header{
-    background-color:#FCDB74;
+    background-color:#3F8FF3;
 }
 
 .genLayout{
@@ -26,18 +26,20 @@ header{
 }
 
 .topItems{
-    border: 1px solid;
-    display: flex;
-    align-items: center;
-    gap: 3rem;
-    padding: 1rem 2rem;
-    border-radius: 30px;
+    padding: 0.3rem 1.5rem;
+    border-radius: 15px;
     background-color: #24222D;
 }
 
 .topItems > h4{
-    font-size: 20px;
+    font-size: 15px;
     color: #FAFAFA;
+    display: flex;
+    gap: 1rem;
+}
+
+.topItems > h4 > span > .hamburger{
+    font-size: 15px;
 }
 
 .imgBox{
@@ -72,8 +74,8 @@ header{
 
 .heroImg{
     border-radius: 100%;
-    height: 300px;
-    width: 350px;
+     height: 400px;
+    width: 330px;
     background-color: #24222D;
 }
 
@@ -218,13 +220,13 @@ header{
 
         /* Service Section */
         .sevWap {
-            border: 2px solid;
             padding: 4rem 0;
 
         }
     .sevBox{
         display: flex;
         align-items: center;
+        justify-content: space-between;
         
     }
 
@@ -236,47 +238,68 @@ header{
         font-size: 20px;
         padding-bottom: 3rem;
         }
+
         .sevTxt > h4 > img{
             width: 30px;
             padding-right: 10px;
         }
 
-        .sevTxt > h2 {
+        .sevContent > h2 {
             text-transform: uppercase;
             color: #FAFAFA;
             width: 450px;
             padding-bottom: 2rem;
         }
-        .sevTxt > h2 > span{
+        .sevContent > h2 > span{
             color: #FCDB74;
         }
-        .sevTxt > ol{
+        .sevContent > ol{
             padding-left: 1rem;
         }
-        .sevTxt > ol > li{
+        .sevContent > ol > li{
             color: #FAFAFA;
             text-transform: uppercase;
             opacity: 0.5;
             line-height: 2rem;
         }
 
-        .hexItems{
-            border: 2px solid white;
-            width: clamp(50px, 25vw,140px);
-            aspect-ratio: 1;
-            background-image: url(image.html/Polygon\ 1\ \(1\).png);
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: contain;
-            display: grid;
-            place-items: center;
-          
+        .hexWrapper{
+            display: flex;
+            gap: 3rem;
+            padding: 1rem;
         }
+
+        .hexCon{ 
+            position: relative;
+        }
+
+        .hexCon > img{
+            width: 120px;
+        }
+
+        .hexItems{
+           position: absolute;
+           top: 2.7rem;
+           width: 100%;
+        }
+
+        .hexItems > h1{
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .hexItems > p{
+            font-size: 8.5px ;
+            text-align: center;
+            text-transform: uppercase;
+        }
+
+
 
 
         /* Educationl / experience */
          .eduBody{
-            background-color: #FCDB74;
+            background-color: #3F8FF3;
          }
 
          .eduBox{
@@ -581,4 +604,13 @@ header{
            margin-right: 0.3rem;
            
         }
+
+
+
+
+
+
+
+
+        /* Styling for Project */
 
