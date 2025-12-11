@@ -116,3 +116,33 @@
     font-size: 15px;
 }
 
+      /* LINK RESPONSIVENESS */
+@media(min-width:260px) and (max-width:460px){
+    .genLayout{
+        width: calc(100% - 60px);
+    }
+
+    .projCont{
+        width: 100%;
+    }
+
+    .projCont > h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .projCont > p{
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .projWord > h1{
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .projBox{
+        overflow-x: scroll;
+        padding: 1rem;
+    }
+}

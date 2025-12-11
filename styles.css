@@ -13,16 +13,16 @@ header{
 }
 
 .genLayout{
-    max-width: 1024px;
+    max-width: 1000px;
     margin: auto;
     
 }
 
 .topBox{
-    height: 84px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-block: 1rem;
 }
 
 .topItems{
@@ -45,8 +45,15 @@ header{
 .imgBox{
     display: flex;
     gap: 1rem;
+    width: 150px;
 }
 
+.imgBox > img{
+    width: 100%;
+}
+
+
+     /* HERO SECTION */
 .heroBox{
     /* border: 2px solid; */
     margin-top: 10rem;
@@ -138,6 +145,81 @@ header{
      .blackLayout{
         background-color: #24222D;
      }
+
+          /* Responsoiveness for header  */
+     @media(min-width:260px) and (max-width:460px){
+         .genLayout{
+            width: calc(100% - 60px);
+         }
+
+         .imgBox{
+            gap: 0.5rem;
+            width: 120px;
+         }
+
+         .imgBox > img{
+            width: 23px;
+         }
+
+         .heroBox{
+            margin-top: 7rem;
+         }
+
+         .heroWrapper{
+            flex-direction: column;
+         }
+
+         .heroCon{
+            order: 1;
+         }
+
+         .heroCon > h4{
+            justify-content: center;
+            margin-bottom: 0.5rem;
+         }
+     
+
+         .heroCon > h1{
+            font-size: 25px;
+            width: 300px;
+            text-align: center;
+            margin-bottom: 1.5rem;
+         }
+
+         .heroImg{
+            order: 0;
+            height: 300px;
+            width: 250px;
+            margin-bottom: 1.5rem;
+         }
+
+         .heroPara{
+            order: 2;
+            width: 250px;
+            margin-bottom: 5rem;
+         }  
+
+         .heroPara > p{
+            text-align: center;
+         }
+
+         .heroPara > button{
+            margin: 1rem auto;
+         }
+
+         .heroName{
+            display: none;
+         }
+
+
+
+
+     }
+
+
+
+
+
      /* ABOUT SECTION */
      .aboutBox{
         padding: 7rem 0rem;
@@ -181,7 +263,7 @@ header{
 
       .ratingCon{
          width: 100%;
-         padding-top: 6rem;
+         margin-top: 6rem;
 
       }
 
@@ -215,6 +297,82 @@ header{
         width: 10%;
         border-radius: 10px;
     }
+
+      .aboutRating1{
+        display: flex;
+        justify-content: space-between;
+        padding-top: 1rem;
+    }
+
+    .aboutRating1 > h1{
+        color: #FAFAFA;
+        font-size: 10px;
+        text-transform: uppercase;
+    }
+
+    .aboutRating1 > P{
+        color: #FAFAFA;
+    }
+
+
+
+     .butRating{
+        border: 1px solid;
+        border-radius: 10px;
+        background-color: #FAFAFA;
+     
+     }
+
+     .butRating > .butInside{
+        background-color: #FCDB74;
+        padding: 0.4rem 0rem;
+        width: 10%;
+        border-radius: 10px;
+    }
+         
+
+          /* ABOUT RESPONSIVENESS */
+      @media(min-width:260px) and (max-width:460px){
+        .aboutBox{
+            padding: 4rem 0;
+        }
+
+        .aboutCon{
+            flex-direction: column;
+            gap: 0;
+        }
+
+        .aboutTxt > h4{
+            justify-content: center;
+            margin-bottom: 2rem;
+        }
+
+        .aboutTxt > h2{
+            font-size: 20px;
+            text-align: center;
+            width: 100%;
+            padding: 0 1rem;
+        }
+
+        .aboutTxt > p{
+            width: 100%;
+            text-align: center;
+            line-height: 1.5rem;
+            padding: 0 1rem;
+        }
+
+        .ratingCon{
+            margin-top: 1rem;
+        }
+
+        .aboutRating1{
+            padding-top: 2rem; 
+        }
+
+
+
+      }
+
 
     
 
@@ -294,6 +452,29 @@ header{
             text-transform: uppercase;
         }
 
+           /* SERVICE RESPONSIVENESS */
+        @media(min-width:260px) and (max-width:460px){
+            .sevBox{
+                flex-direction: column;
+            }
+
+            .sevTxt > h4{
+                justify-content: center;
+            }
+
+            .sevContent > h2 {
+                width: 100%;
+                font-size: 20px;
+                text-align: center;
+            }
+
+              .sevContent > ol{
+                width: 150px;
+                margin: auto;
+              }
+
+        }
+
 
 
 
@@ -303,7 +484,7 @@ header{
          }
 
          .eduBox{
-            padding: 4rem;
+            padding: 4rem 0;
          }
 
          .eduTxt{
@@ -324,37 +505,37 @@ header{
             width: 30px;
          }
 
-         .eduItems{
+         /* .eduItems{
             width: 600px;
             margin: auto;
             background-color: #24222D;
             padding: 2rem;
             margin-bottom: 2.5rem;
             border-radius: 20px;
-         }
+         } */
 
-         .eduPanel > h4{
+         /* /* .eduPanel > h4{
             text-transform: uppercase;
             color: #FCDB74;
             font-size: 15px;
-            padding-bottom: 3rem;
-        }
+            padding-bottom: 3rem; 
+        } */
 
-         .eduPanel > h2{
+         /* .eduPanel > h2{
             text-transform: uppercase;
             display: flex;
             align-items: center;
             font-size: 17px;
             color: #FAFAFA;
             padding-bottom: 0.3rem;
-         }
+         } */
 
-          .eduPanel > h2 > img{
+          /* .eduPanel > h2 > img{
             padding-right: 1rem;
             width: 30px;
-          }
+          } */
 
-          .eduPanel > p{
+          /* .eduPanel > p{
             padding-left: 2rem;
             text-transform: capitalize;
             color: #FAFAFA;
@@ -362,14 +543,15 @@ header{
             font-size: 12px;
              padding-bottom: 0.3rem;
 
-          }
-          .eduPanel > h6{
+          } */
+
+          /* .eduPanel > h6{
             padding-left: 2rem;
             text-transform: capitalize;
             color: #FCDB74;
             font-weight: 400;
             font-size: 10px;
-        }
+        } */
 
 
          .expBox{
@@ -457,6 +639,17 @@ header{
             color: #FCDB74;
             font-weight: 400;
             font-size: 10px;
+        }
+
+               /* EDUCATIONAL / EXPERIENCE SECTION */
+        @media(min-width:260px) and (max-width:460px){
+            .eduTxt{
+                width: 100%;
+            }
+
+            .expBox{
+                width: 100%;
+            }
         }
 
           
@@ -604,13 +797,30 @@ header{
            margin-right: 0.3rem;
            
         }
+              /* CONTACT FORM */
+         @media(min-width:260px) and (max-width:460px){
+             .conBox{
+                padding: 4rem 0rem;
+             } 
 
+             .imgKey{
+                width: 100%;
+             }
 
+             form{
+                width: 100%;
+             }
 
+             .formWap{
+                flex-direction: column;
+             }
 
+             .formBox > input{
+                width: 100%;
+             }
 
-
-
-
-        /* Styling for Project */
+              .subForm > input{
+                width: 100%;
+              }
+         }
 
